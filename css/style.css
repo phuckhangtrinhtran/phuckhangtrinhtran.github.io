@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: #fff;
+    border: 2px solid #333;
+    width: 620px;
+    padding: 0;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px;
+    border-bottom: 2px solid #333;
+    letter-spacing: 0.05em;
+}
+
+.card-body {
+    display: flex;
+    border-top: none;
+}
+
+.col-avatar {
+    width: 180px;
+    min-width: 180px;
+    border-right: 2px solid #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 12px;
+    gap: 10px;
+}
+
+#avatar {
+    width: 130px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center top;
+    border: 1px solid #aaa;
+}
+
+.avatar-label {
+    font-size: 11px;
+    color: #555;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.col-info {
+    flex: 1;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.info-title {
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 6px;
+    letter-spacing: 0.05em;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.info-table tr td {
+    padding: 5px 6px;
+    vertical-align: top;
+}
+
+.info-table td.label {
+    color: #333;
+    font-weight: bold;
+    white-space: nowrap;
+    width: 90px;
+}
+
+.info-table td.label::after {
+    content: ' |';
+    color: #aaa;
+}
+
+.info-links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 13px;
+    border-top: 1px dashed #ccc;
+    padding-top: 10px;
+}
+
+.info-links a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+.info-links a:hover {
+    text-decoration: underline;
+}
+
+.info-links .label {
+    font-weight: bold;
+    color: #333;
+    margin-right: 4px;
+}
+
+.info-hobbies {
+    font-size: 13px;
+    border-top: 1px dashed #ccc;
+    padding-top: 10px;
+}
+
+.info-hobbies .label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#hobbies {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding-left: 4px;
+}
+
+#hobbies span {
+    color: #333;
+}
+
+#student-id {
+    display: none;
+}
+
+.lang-switch {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    gap: 8px;
+    z-index: 99;
+}
+
+.lang-switch button {
+    padding: 6px 14px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.lang-switch button.active {
+    background: #4a90e2;
+    color: #fff;
+    border-color: #4a90e2;
+}
+
+.lang-switch button:hover {
+    background: #4a90e2;
+    color: #fff;
+    border-color: #4a90e2;
+}
